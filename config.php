@@ -1,6 +1,6 @@
 <?php
-  $id = $_POST['id'];
-  $name = $_POST['name'];
+  $id = $_POST['PID'];
+  $name = $_POST['Pname'];
 
 
   $db_host ="us-cdbr-east-06.cleardb.net";
@@ -12,7 +12,7 @@
   if($connect->connect_error){
     die("Connection Failed  :  '.$connect->connect_error);
   }else{
-      $stmt = $connect->prepare("insert into patient(id,name)values(?,?)");
+      $stmt = $connect->prepare("insert into patient(PID,Pname)values(?,?)");
       $stmt->bind_param("is",$id,$name);
       echo"registration Completed";
       $stmt->close();
