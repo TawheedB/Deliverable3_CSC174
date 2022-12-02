@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 
-$query = $connect->query("SELECT * FROM patient);
+$query = $connect->query("SELECT * FROM patient");
 ?>
 <table border "1">
   <tr>
@@ -9,6 +9,7 @@ $query = $connect->query("SELECT * FROM patient);
     <td>Patient name</td>
   </tr>
   <?php
+  $no = 1;
   while($row = $query->fetch_assoc()){
     echo "<tr>
        <td>$no</td>
