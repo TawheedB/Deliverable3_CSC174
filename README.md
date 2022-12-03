@@ -18,7 +18,7 @@
 
 ## Link To The Website
 >This website prompts you to enter a Name and a Patient ID number so it can be added into a dentist clinic Patient table in our database.
-?> [Heroku Website](https://deliverable31.herokuapp.com)
+>> [Heroku Website](https://deliverable31.herokuapp.com)
 
 ---
 ## Path To The Php File
