@@ -9,11 +9,13 @@ $query = $connect->query("SELECT * FROM patient");
     <td>Patient Name</td>
   </tr>
   <?php
+  $no =1;
   while($row = $query->fetch_assoc()){
     echo"<tr>
-       <td>{$row['PID']}</td>
+       <td>$no</td>
        <td>{$row['Pname']}</td>
      </tr>"
+     $no++;
   }
   ?>
 </table>
