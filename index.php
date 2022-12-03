@@ -54,7 +54,18 @@ if($conn->connect_error){
 
 <?php
 
-$query = $conn ->query("SELECT * FROM patient");
+$conn = new mysqli('us-cdbr-east-06.cleardb.net','b36704ffd73c9a','cdb199ed','heroku_c8a8b19f80392e0');
+if($conn->connect_error){
+	die('Connection Failed  :  '.$conn->connect_error);
+}else{
+	
+	
+	$query = $conn ->query("SELECT * FROM patient");
+
+	
+}
+
+
 
 ?>
 
@@ -72,6 +83,7 @@ $query = $conn ->query("SELECT * FROM patient");
 			<td>{$row['Pname']}</td>
 		</tr>";
 	}
+	$conn->close();
 	?>
 </table>
 	
