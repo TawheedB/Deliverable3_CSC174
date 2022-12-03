@@ -46,11 +46,7 @@ if($conn->connect_error){
 	$conn->close();
 }
 
-
-
 ?>
-
-
 
 <?php
 
@@ -58,17 +54,12 @@ $conn = new mysqli('us-cdbr-east-06.cleardb.net','b36704ffd73c9a','cdb199ed','he
 if($conn->connect_error){
 	die('Connection Failed  :  '.$conn->connect_error);
 }else{
-	
-	
+		
 	$query = $conn ->query("SELECT * FROM patient");
-
 	
 }
 
-
-
 ?>
-
 
 <table border="1">
 	<tr>
