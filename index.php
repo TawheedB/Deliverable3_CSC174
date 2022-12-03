@@ -15,10 +15,10 @@
 		<label for="Pname">Name</label>
 		<input type="text" id="Pname" name="Pname">
 
-		//<br>		
+		<br>		
 
-		//<label for="PID">Patient ID#</label>
-		//<input type="text" pattern="\d*" name="PID">
+		<label for="PID">Patient ID#</label>
+		<input type="text" pattern="\d*" name="PID">
 		
 		<br>
 
