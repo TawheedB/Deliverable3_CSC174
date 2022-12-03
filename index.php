@@ -46,10 +46,12 @@ if($conn->connect_error){
 	$conn->close();
 }
 
+
+
 ?>
 
 
-}
+
 <?php
 
 $query = $conn ->query("SELECT * FROM patient");
