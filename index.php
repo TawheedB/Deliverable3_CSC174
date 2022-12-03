@@ -32,11 +32,22 @@
 <?php
 include("config.php");
 
-	$name = $_POST["Pname"];
 	$PID = $_POST["PID"];
+	$name = $_POST["Pname"];
 
 	print_r($_POST);	
+$sql = "INSERT INTO message (PID, Pname)
+        VALUES (?, ?)";
+$stmt = mysqli_stmt_init($connect);
+if ( ! mysqli_stmt_prepare($stmt, $sql)) {
+ 
+    die(mysqli_error($connect));
+}
 
+mysqli_stmt_bind_param($stmt,"is",
+                       $PID,
+                       $name)
 
+mysqli_stmt_execute($stmt);
 
-
+echo "Record saved.";
