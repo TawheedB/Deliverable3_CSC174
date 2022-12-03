@@ -1,36 +1,11 @@
 # CSC 174 Project
 ---
-## Overview 
+This Website prompts you to enter a name and a Patient ID number so it can be added into a dentist Patient table in our database. 
 
-- In this project we created a static website that connects to a database in the cloud using Heroku and within that website one is able to insert data into the database and display the database.
+> Links
+>> > [Heroku Website](https://deliverable31.herokuapp.com)
 
----
-
-## Team Members
-
----
-
-- [@Tawheed Bayaz](https://github.com/TawheedB)
-  - **Email:** Tawheedbayaz@csus.edu
-- [@Javier Garcia](https://github.com/JavierGarciaJr)
-  - **Email:** javiergarcia@csus.edu
-
----
-
-## Link To The Website
-> [Heroku Website](https://deliverable31.herokuapp.com)
-
----
-## Path To The Php File
-
->
-
-## Code
+> Path to index.php which includes our inserts
+>> https://github.com/TawheedB/Deliverable3_CSC174/blob/2e22617cfa564ef58cde2367075bccc24ebebf0d/index.php
 
 
-Indented SQL code to create our patient table
-
-    create table PATIENT(
-    PID	INT     NOT NULL,
-    Pname      VARCHAR(15),
-    primary key (PID));
