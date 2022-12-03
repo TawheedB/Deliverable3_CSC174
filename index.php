@@ -42,18 +42,3 @@ $connect = mysqli_connect($db_hsot,$db_user,$db_pass,$db_name) or die("database 
 	$name = $_POST["Pname"];
 
 	print_r($_POST);	
-$sql = "INSERT INTO message (PID, Pname)
-        VALUES (?, ?)";
-$stmt = mysqli_stmt_init($connect);
-if ( ! mysqli_stmt_prepare($stmt, $sql)) {
- 
-    die(mysqli_error($connect));
-}
-
-mysqli_stmt_bind_param($stmt,"is",
-                       $PID,
-                       $name)
-
-mysqli_stmt_execute($stmt);
-
-echo "Record saved.";
