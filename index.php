@@ -30,7 +30,7 @@
 
 
 <?php
-
+include("config.php");
 
 	$name = $_POST["Pname"];
 	$PID = $_POST["PID"];
