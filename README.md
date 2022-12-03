@@ -1,2 +1,5 @@
-# Deliverable3_CSC174
-This repository is for the Deliverable 3 of the CSC 174 Project
+# CSC 174 Project
+---
+
+> Links
+>> [Heroku Website](https://deliverable31.herokuapp.com/ "Website")
