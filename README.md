@@ -1,4 +1,4 @@
-# CSC 174 Project 8-)
+# CSC 174 Project
 ---
 ## Overview 
 
@@ -8,7 +8,6 @@
 
 ## Team Members
 
----
 
 - [@Tawheed Bayaz](https://github.com/TawheedB)
   - **Email:** Tawheedbayaz@csus.edu
