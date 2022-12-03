@@ -45,4 +45,32 @@ if($conn->connect_error){
 	$stmt->close();
 	$conn->close();
 }
+
 ?>
+
+
+}
+<?php
+
+$query = $conn ->query("SELECT * FROM patient");
+
+?>
+
+
+<table border="1">
+	<tr>
+		<td>ID</td>
+		<td>Name</td>
+	</tr>
+	<?php
+	
+	while($row = $query->fetch_assoc()){
+		echo "<tr>
+			<td>{$row['PID']}</td>
+			<td>{$row['Pname']}</td>
+		</tr>";
+	}
+	?>
+</table>
+	
+	
