@@ -23,7 +23,7 @@
 ---
 ## Path To The Php File
 > This is our file which contains the code to prompt the user with text boxes that they can enter the data for the database
->> [Path to Index.php](https://github.com/TawheedB/Deliverable3_CSC174/blob/e6686b78cebe6bb5a11f4f0f2f902bffa54e07d8/index.php)
+>> [Path to Index.php](https://github.com/TawheedB/Deliverable3_CSC174/blob/c9c4e30007e8fc73cd16ba18e7486bbfb8bcca61/index.php)
 
 ## Code
 
