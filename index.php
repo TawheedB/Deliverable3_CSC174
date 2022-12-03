@@ -18,7 +18,7 @@
 		<br>		
 
 		<label for="PID">Patient ID#</label>
-		<input type="text" pattern="\d*" name="PID">
+		<input type="text" pattern="\d*" name="PID" required>
 		
 		<br>
 
