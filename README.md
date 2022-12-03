@@ -1,4 +1,4 @@
-# CSC 174 Project 8-)
+# CSC 174 Project
 ---
 ## Overview 
 
