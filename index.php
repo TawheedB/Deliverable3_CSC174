@@ -31,8 +31,7 @@
 
 <?php
 $PID = $_POST["PID"];
-$name = $_POST["Pname"];
-print_r($_POST);	
+$name = $_POST["Pname"];	
 
 
 $conn = new mysqli('us-cdbr-east-06.cleardb.net','b36704ffd73c9a','cdb199ed','heroku_c8a8b19f80392e0');
