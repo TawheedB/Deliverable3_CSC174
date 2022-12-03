@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 
-$query = $connect->query("SELECT * FROM patient");
+$query = $connect->query("SELECT * FROM PATIENT");
 ?>
 <table border="1">
   <tr>
