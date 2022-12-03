@@ -1,19 +1,11 @@
 <?php
 
 $name = $_POST["name"];
-$message = $_POST["message"];
-$priority = filter_input(INPUT_POST, "priority", FILTER_VALIDATE_INT);
-$type = filter_input(INPUT_POST, "type", FILTER_VALIDATE_INT);
-$terms = filter_input(INPUT_POST, "terms", FILTER_VALIDATE_BOOL);
 
-if ( ! $terms) {
-    die("Terms must be accepted");
-}   
-
-$host = "localhost";
-$dbname = "message_db";
-$username = "root";
-$password = "";
+$host = "us-cdbr-east-06.cleardb.net";
+$dbname = "heroku_c8a8b19f80392e0";
+$username = "b36704ffd73c9a";
+$password = "cdb199ed";
         
 $conn = mysqli_connect(hostname: $host,
                        username: $username,
@@ -24,8 +16,8 @@ if (mysqli_connect_errno()) {
     die("Connection error: " . mysqli_connect_error());
 }           
         
-$sql = "INSERT INTO message (name, body, priority, type)
-        VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO patient (PID, Pname)
+        VALUES (5, ?)";
 
 $stmt = mysqli_stmt_init($conn);
 
@@ -34,11 +26,8 @@ if ( ! mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_error($conn));
 }
 
-mysqli_stmt_bind_param($stmt, "ssii",
-                       $name,
-                       $message,
-                       $priority,
-                       $type);
+mysqli_stmt_bind_param($stmt, "s",
+                       $name);
 
 mysqli_stmt_execute($stmt);
 
