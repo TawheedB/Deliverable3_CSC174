@@ -1,3 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Patient</title>
+	<meta charset="UTF-8">
+
+</head>
+
+<body>
+
+	<h1>Patient</h1>
+	
+	<form action="index.php" method="post">
+		
+		<label for="Pname">Name</label>
+		<input type="text" id="Pname" name="Pname">
+
+		<br>		
+
+		<label for="PID">Patient ID#</label>
+		<input type="text" pattern="\d*" name="PID">
+		
+		<br>
+
+		<button>Send</button>
+	</form>
+</body>
+
+</html>
+
 <?php
 
         $Pname = $_POST["Pname"];
