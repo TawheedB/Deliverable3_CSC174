@@ -17,12 +17,13 @@
 ---
 
 ## Link To The Website
-> [Heroku Website](https://deliverable31.herokuapp.com)
+>This website prompts you to enter a Name and a Patient ID number so it can be added into a dentist clinic Patient table in our database.
+?> [Heroku Website](https://deliverable31.herokuapp.com)
 
 ---
 ## Path To The Php File
-
-> [Path to Index.php](https://github.com/TawheedB/Deliverable3_CSC174/blob/2e22617cfa564ef58cde2367075bccc24ebebf0d/index.php)
+> This is our file which contains the code to prompt the user with text boxes that they can enter the data for the database
+>> [Path to Index.php](https://github.com/TawheedB/Deliverable3_CSC174/blob/2e22617cfa564ef58cde2367075bccc24ebebf0d/index.php)
 
 ## Code
 
